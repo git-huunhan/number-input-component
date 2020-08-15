@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import plusImg from './plus.svg';
+import minusImg from './minus.svg';
 import "./App.css";
 
 class App extends Component {
@@ -28,9 +30,13 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <button onClick={this.onClickDown} id="subBtn">-</button>
+        <div className="subBtn">
+          <img onClick={this.onClickDown} src={minusImg} alt="minusImg"></img>
+        </div>
         <p id="numberPreview">{this.state.val}</p>
-        <button onClick={this.onClickUp} id="plusBtn">+</button>
+        <div className="plusBtn">
+          <img onClick={this.onClickUp} src={plusImg} alt="plusImg"></img>
+        </div>
       </div>
     );
   }

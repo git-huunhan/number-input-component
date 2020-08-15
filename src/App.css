@@ -16,29 +16,23 @@ body {
   padding: 0 20px 0 20px;
 }
 
-#subBtn {
-  height: fit-content;
-  margin-right: 15px;
-  background-color: white;
-  border: none;
-  font-size: 30px;
+.plusBtn img{
+  width: 15px;
+  height: 15px;
+  margin-left: 20px;
+  cursor: pointer;
 }
 
-#plusBtn {
-  height: fit-content;
-  margin-left: 15px;
-  background-color: white;
-  border: none;
-  font-size: 30px;
+.subBtn img{
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
 #numberPreview {
   height: fit-content;
   width: 50px;
   font-size: 20px;
-}
-
-#subBtn:focus, #plusBtn:focus{
-  outline: none;
-  cursor: pointer;
+  margin: 15px 0 15px 0;
 }
