@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import plusImg from './plus.svg';
-import minusImg from './minus.svg';
+
+import Input from './components/Input';
+import plusImg from "./plus.svg";
+import minusImg from "./minus.svg";
 import "./App.css";
 
 class App extends Component {
@@ -33,7 +35,7 @@ class App extends Component {
         <div className="subBtn">
           <img onClick={this.onClickDown} src={minusImg} alt="minusImg"></img>
         </div>
-        <p id="numberPreview">{this.state.val}</p>
+        <Input input={this.state.val}/>
         <div className="plusBtn">
           <img onClick={this.onClickUp} src={plusImg} alt="plusImg"></img>
         </div>
